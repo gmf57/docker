@@ -1,0 +1,49 @@
+### Colors
+# Change the default cycle of colors to one matching seaborn
+axes.prop_cycle: cycler("color", ['4878cf', '6acc65', 'd65f5f', 'b47cc7', 'c4ad66', '77bedb'])
+
+### Axes
+# Make the axes thicker
+axes.linewidth : 1.4
+
+# Use scientific notation if there are 2 or more
+# trailing/leading zeros (default is 7)
+axes.formatter.limits: -3, 3
+
+
+### Ticks
+# Add ticks around all sides of figure
+# Change ticks to be inward facing
+xtick.top : True
+xtick.direction : in
+xtick.major.width : 1.4
+
+ytick.right : True
+ytick.major.width : 1.4
+ytick.direction : in
+
+### Text
+# Do not use italic font for math since I use this mostly for units
+mathtext.default: regular
+
+### Figure
+# Change the default figure shape to a square
+figure.figsize : 4,4
+
+### Images
+# Change the default colormap to RdBu
+# Change the origin to "lower" so matshow acts like other plotting commands
+image.cmap : inferno # magma, inferno, plasma, viridis are the best linear cmaps
+image.origin : lower
+
+### Saving
+# Change the default dpi when saving to publication quality
+savefig.dpi : 500
+savefig.bbox : tight
+
+### Legends
+# Return to the 1.0 style legends
+legend.fancybox : False
+legend.fontsize : small
+legend.framealpha : None
+legend.edgecolor : inherit
